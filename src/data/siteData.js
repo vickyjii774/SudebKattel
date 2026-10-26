@@ -3,39 +3,53 @@ const siteData = {
   profile: {
     name: "Sudeb Kattel",
     shortName: "SP Kattel",
-    role: "Creative Professional & Technology Enthusiast",
-    email: "hello@example.com",
+    role: "पण्डित",
+    email: "sudebkattel9@gmail.com",
     location: "Chitwan, Nepal",
     introduction:
-      "I believe in creating meaningful experiences through creativity, technology, and continuous learning.",
-    about:
-      "I am a curious and motivated individual passionate about technology, creative projects, and bringing ideas to life. I enjoy learning new skills, collaborating with people, and turning challenges into opportunities.",
-    image: "public/images/uploads/1.jpeg",
-    resumeUrl: "",
+"एक समर्पित पण्डित, वैदिक ज्ञान, सनातन संस्कृति र आध्यात्मिक मूल्यहरूको संरक्षण तथा प्रवर्द्धनमा रुचि राख्ने व्यक्ति।",
+
+about:
+    " वैदिक परम्परा, सनातन धर्म, संस्कृत भाषा तथा आध्यात्मिक ज्ञानप्रति गहिरो रुचि राख्ने व्यक्ति हुँ। धार्मिक संस्कार, पूजा–पाठ र वैदिक ज्ञानको अध्ययन तथा संरक्षणमार्फत हाम्रो मौलिक संस्कृति र परम्परालाई नयाँ पुस्तासम्म पुर्‍याउने मेरो उद्देश्य हो। निरन्तर अध्ययन, साधना र सेवाभावका साथ आध्यात्मिक मूल्यहरूलाई जीवनमा आत्मसात् गर्दै समाजमा सकारात्मक योगदान दिन चाहन्छु।",
+   
+      image: "public/images/uploads/1.jpeg",
+
     socials: [
       { label: "Instagram", url: "https://instagram.com/" },
-      { label: "LinkedIn", url: "https://linkedin.com/" },
-      { label: "GitHub", url: "https://github.com/" },
+      { label: "tiktok", url: "https://linkedin.com/" },
+      { label: "whatsapp", url: "https://github.com/" },
+      {label:"youtube",url:""},
+      {label:"Facebook", url : "https://www.facebook.com/babagaleshwar"},
     ],
   },
 
-  experience: [
+
+
+  education: [
+    {
+      qualification: "Master",
+      institution: "Institution Name",
+      period: "2023 — 2026",
+      description:
+        "Add your course, academic interests, and relevant achievements.",
+    },
+     {
+      qualification: "Bachelor",
+      institution: "Institution Name",
+      period: "2023 — 2026",
+      description:
+        "Add your course, academic interests, and relevant achievements.",
+    },
+
+  ],
+
+    experience: [
     {
       role: "Your Professional Role",
       company: "Organization Name",
       period: "2025 — Present",
       description:
         "Add your responsibilities, projects, and the impact of your work here.",
-    },
-  ],
-
-  education: [
-    {
-      qualification: "Your Qualification",
-      institution: "Institution Name",
-      period: "2023 — 2026",
-      description:
-        "Add your course, academic interests, and relevant achievements.",
     },
   ],
 

@@ -8,11 +8,9 @@ export default function Experience() {
   return (
     <section id="experience" className="scroll-mt-20 bg-[#F8FAF7]">
       <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24 lg:px-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#588157]">
-          My journey
-        </p>
+       
         <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl">
-          Experience<span className="text-[#588157]">.</span>
+          Experience<span className="text-[#588157]"></span>
         </h2>
         <p className="mt-4 max-w-2xl leading-7 text-gray-600">
           The roles, responsibilities, and experiences that continue to shape my journey.

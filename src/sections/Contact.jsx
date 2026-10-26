@@ -1,23 +1,13 @@
 
 import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 import siteData from "../data/siteData";
-import {
-  ArrowRight,
-  ArrowUpRight,
-  Github,
-  Instagram,
-  Linkedin,
-  Send,
-} from "lucide-react";
-
-const socialIcons = {
-  instagram: Instagram,
-  linkedin: Linkedin,
-  github: Github,
-};
+import SocialLinks from "../components/SocialLinks";
 
 export default function Contact() {
-  const { name, email, socials = [] } = siteData.profile;
+  const profile = siteData?._profile ?? siteData?.profile ?? {};
+  const email = profile.email ?? "";
+  const socials = profile.socials ?? [];
 
   const [form, setForm] = useState({
     name: "",
@@ -27,25 +17,30 @@ export default function Contact() {
   });
 
   const handleChange = (event) => {
+    const { name, value } = event.target;
+
     setForm((previous) => ({
       ...previous,
-      [event.target.name]: event.target.value,
+      [name]: value,
     }));
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!email) {
-      window.alert("Please configure the contact email in siteData.js.");
+    if (!email.trim()) {
+      window.alert(
+        "Please configure the contact email in siteData.js."
+      );
       return;
     }
 
     const subject = encodeURIComponent(form.subject);
+
     const body = encodeURIComponent(
       `Name: ${form.name}\n` +
-      `Email: ${form.email}\n\n` +
-      `Message:\n${form.message}`
+        `Email: ${form.email}\n\n` +
+        `Message:\n${form.message}`
     );
 
     window.location.href =
@@ -61,10 +56,9 @@ export default function Contact() {
       className="scroll-mt-20 bg-white"
     >
       <div className="mx-auto max-w-3xl px-5 py-20 sm:px-8 sm:py-28">
+
         {/* Heading */}
         <div className="text-center">
-        
-
           <h2 className="mt-6 text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl lg:text-6xl">
             Let's start a
             <span className="mt-2 block text-[#588157]">
@@ -73,15 +67,20 @@ export default function Contact() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-gray-600">
-            Have an idea, a project, or an opportunity?
-            Send me a message. I'd love to hear from you.
+            Send me a message.
+            My inbox is open.
           </p>
         </div>
 
-        {/* Contact form */}
+        {/* Contact Form */}
         <div className="mt-12 rounded-[2rem] border border-gray-200/80 bg-white p-6 shadow-xl shadow-gray-900/[0.04] sm:p-10">
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-5"
+          >
             <div className="grid gap-5 sm:grid-cols-2">
+
+              {/* Name */}
               <div>
                 <label
                   htmlFor="contact-name"
@@ -89,6 +88,7 @@ export default function Contact() {
                 >
                   Your name *
                 </label>
+
                 <input
                   id="contact-name"
                   name="name"
@@ -103,6 +103,7 @@ export default function Contact() {
                 />
               </div>
 
+              {/* Email */}
               <div>
                 <label
                   htmlFor="contact-email"
@@ -110,6 +111,7 @@ export default function Contact() {
                 >
                   Email address *
                 </label>
+
                 <input
                   id="contact-email"
                   name="email"
@@ -125,6 +127,7 @@ export default function Contact() {
               </div>
             </div>
 
+            {/* Subject */}
             <div>
               <label
                 htmlFor="contact-subject"
@@ -132,6 +135,7 @@ export default function Contact() {
               >
                 Subject *
               </label>
+
               <input
                 id="contact-subject"
                 name="subject"
@@ -145,6 +149,7 @@ export default function Contact() {
               />
             </div>
 
+            {/* Message */}
             <div>
               <div className="flex items-center justify-between gap-3">
                 <label
@@ -153,6 +158,7 @@ export default function Contact() {
                 >
                   Your message *
                 </label>
+
                 <span className="text-xs text-gray-400">
                   {form.message.length}/5000
                 </span>
@@ -172,11 +178,13 @@ export default function Contact() {
               />
             </div>
 
+            {/* Submit */}
             <button
               type="submit"
               className="group inline-flex w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-[#588157] px-6 py-4 text-sm font-semibold text-white shadow-lg shadow-[#588157]/20 transition duration-300 hover:-translate-y-0.5 hover:bg-[#3F6240] hover:shadow-xl active:translate-y-0"
             >
               Send message
+
               <ArrowRight
                 size={18}
                 className="transition-transform group-hover:translate-x-1"
@@ -184,48 +192,23 @@ export default function Contact() {
             </button>
 
             <p className="text-center text-xs leading-5 text-gray-500">
-              Your default email application will open with your message
-              prepared for you to review and send.
+              Your email app will open to send your message.
             </p>
           </form>
-
-       
         </div>
 
-         {/* Social media BELOW the form */}
-          {socials.length > 0 && (
-            <div className="mt-8 border-t border-gray-100 pt-7">
-              <p className="text-center text-sm font-medium text-gray-500">
-                Connect with me
-              </p>
+        {/* Social Media */}
+        {socials.length > 0 && (
+          <div className="mt-8 border-t border-gray-100 pt-7">
+            <p className="text-center text-sm font-medium text-gray-500">
+              Connect with me
+            </p>
 
-              <div className="mt-5 flex flex-wrap items-center justify-center gap-4">
-                {socials.map((social) => {
-                  const Icon =
-                    socialIcons[social.label?.toLowerCase()] ||
-                    ArrowUpRight;
-
-                  return (
-                    <a
-                      key={social.label}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={social.label}
-                      title={social.label}
-                      className="group flex cursor-pointer items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-gray-700 transition duration-300 hover:-translate-y-1 hover:border-[#588157] hover:bg-[#E8EFE7] hover:text-[#3F6240]"
-                    >
-                      <Icon
-                        size={19}
-                        className="transition-transform group-hover:scale-110"
-                      />
-                      <span>{social.label}</span>
-                    </a>
-                  );
-                })}
-              </div>
+            <div className="mt-5 flex text-2xl justify-center">
+              <SocialLinks socials={socials} />
             </div>
-          )}
+          </div>
+        )}
       </div>
     </section>
   );
