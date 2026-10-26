@@ -1,0 +1,113 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "role": "Creative Professional · Project Builder",
+    "intro": "I bring ideas to life through thoughtful planning, collaboration, and purposeful digital experiences. Explore my work, experience, and the moments that have shaped my journey.",
+    "location": "Kathmandu, Nepal",
+    "email": "hello@example.com",
+    "phone": "",
+    "image": "",
+    "resume": "",
+    "social": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/"
+      }
+    ]
+  },
+  "availability": "Open to meaningful collaborations and new opportunities",
+  "about": {
+    "heading": "Curious by nature. Focused on making things happen.",
+    "description": "I enjoy working at the intersection of creativity, technology, and community. My approach combines practical problem-solving with an eye for detail—from shaping an idea and coordinating people to building digital experiences and documenting the process.",
+    "focus": [
+      "Project coordination",
+      "Digital experiences",
+      "Community & events",
+      "Creative storytelling"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Project / Operations Contributor",
+      "organization": "Independent Projects",
+      "period": "2024 — Present",
+      "location": "Nepal",
+      "description": "Planning and coordinating projects from early ideas through execution, keeping priorities clear and communication practical.",
+      "highlights": [
+        "Coordinate timelines and deliverables",
+        "Work with collaborators and stakeholders",
+        "Document progress and outcomes"
+      ]
+    },
+    {
+      "role": "Digital & Creative Projects",
+      "organization": "Selected Work",
+      "period": "2022 — Present",
+      "location": "Remote",
+      "description": "Developing digital content and web experiences with an emphasis on clarity, usability, and consistent presentation.",
+      "highlights": [
+        "Create and maintain website content",
+        "Develop visual assets for digital channels",
+        "Iterate from feedback"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "qualification": "Master's Degree",
+      "institution": "Add your institution",
+      "period": "In progress",
+      "details": "Update this section with your program, key subjects, and relevant academic work."
+    },
+    {
+      "qualification": "Bachelor's Degree",
+      "institution": "Add your institution",
+      "period": "Completed",
+      "details": "Add your qualification and any relevant achievements."
+    }
+  ],
+  "achievements": [
+    {
+      "title": "A milestone worth sharing",
+      "organization": "Organization or project",
+      "date": "2025",
+      "description": "Replace this sample with an award, certification, result, or meaningful milestone."
+    }
+  ],
+  "events": [
+    {
+      "title": "Community Event / Project",
+      "role": "Organizer / Contributor",
+      "date": "Add date",
+      "location": "Kathmandu, Nepal",
+      "description": "Share what the event was about, your contribution, and the impact it created.",
+      "image": "",
+      "link": ""
+    }
+  ],
+  "gallery": [
+    {
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85",
+      "caption": "Ideas in progress",
+      "category": "Creative work"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=85",
+      "caption": "Working together",
+      "category": "Collaboration"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=1200&q=85",
+      "caption": "Event moments",
+      "category": "Events"
+    }
+  ]
+}
