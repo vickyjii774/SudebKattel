@@ -16,10 +16,10 @@ export default function Footer() {
           <span className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full border border-white bg-white shadow-md">
             {image && (
               <img
-                src={image}
-                alt={name}
-                className="h-full w-full object-cover"
-              />
+              src="/images/uploads/1.jpeg"
+              alt="A personal photo"
+              className="aspect-[16/16] w-full rounded-2xl object-cover shadow-md"
+            />
             )}
           </span>
 

@@ -50,10 +50,10 @@ export default function Hero() {
           <div className="relative flex aspect-square items-center justify-center overflow-hidden rounded-[1.25rem] border border-white bg-white shadow-2xl shadow-gray-900/10 sm:rounded-[2rem]">
             {image ? (
               <img
-                src={image}
-                alt={name}
-                className="h-full w-full object-cover"
-              />
+              src="/images/uploads/1.jpeg"
+              alt="A personal photo"
+              className="aspect-[16/16] w-full rounded-2xl object-cover shadow-md"
+            />
             ) : (
               <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-[#E8EFE7] via-white to-[#DCE8DA] p-2 text-center sm:p-8">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#588157] text-2xl font-bold text-white sm:h-32 sm:w-32 sm:rounded-[2rem] sm:text-6xl">
