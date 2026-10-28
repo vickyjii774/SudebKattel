@@ -32,7 +32,8 @@ collections:
               - { label: About Description, name: about, widget: text }
               - { label: Location, name: location, widget: string, required: false }
               - { label: Email, name: email, widget: string }
-              - { label: Profile Image, name: image, widget: image, required: false }
+              - { label: Profile Image (Hero), name: image, widget: image, required: false }
+              - { label: Navbar and Footer Image, name: navbarImage, widget: image, required: false }
               - { label: About Section Image, name: aboutImage, widget: image, required: false }
               - label: Social Links
                 name: socials
