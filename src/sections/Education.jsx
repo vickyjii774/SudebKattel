@@ -24,6 +24,7 @@ export default function Education() {
   key={`${item.institution}-${index}`}
   className="flex flex-col gap-5 rounded-3xl border border-white bg-amber-50 p-6 transition duration-300 hover:border-[#588157]/40 sm:p-8"
 >
+  {item.image && <img src={item.image} alt={item.qualification} className="aspect-[16/7] w-full rounded-2xl object-cover" />}
   <div className="flex items-start gap-5">
     <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#E8EFE7] text-[#3F6240]">
       <GraduationCap size={26} />
