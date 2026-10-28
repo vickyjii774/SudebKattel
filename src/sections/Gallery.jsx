@@ -40,7 +40,7 @@ export default function Gallery() {
           </p>
 
           
-          <div className="mt-12 grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-4 lg:gap-5">
+          <div className="mt-5 grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-4 lg:gap-5">
             {items.map((item, index) => {
               const photos = getPhotos(item);
               const cover = item.image || photos[0];
@@ -120,7 +120,7 @@ export default function Gallery() {
             type="button"
             onClick={closeGallery}
             aria-label="Close gallery"
-            className="absolute right-4 top-4 z-10 rounded-full bg-white/10 p-3 text-white transition hover:bg-white/20"
+            className="absolute right-4 top-4 z-10 rounded-full bg-red-500 p-3 text-white transition hover:bg-white/20"
           >
             <X size={24} />
           </button>

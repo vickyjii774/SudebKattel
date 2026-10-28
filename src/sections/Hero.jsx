@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-[#F2F6F1]">
       <Container>
-        <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[#588157]/10 blur-3xl" />
+        <div className="pointer-events-none absolute -right-20 top-20 h-72 w-72 rounded-full bg-[#588157]/10 blur-3xl" />
         <div className="mx-auto grid max-w-7xl grid-cols-2 items-center gap-3 px-3 py-12 sm:gap-12 sm:px-8 sm:py-24 lg:gap-20 lg:px-12 lg:py-28">
           <div className="relative z-10 min-w-0">
             <p className="mt-4 text-[10px] font-semibold uppercase tracking-wider text-[#588157] sm:mt-8 sm:text-sm sm:tracking-[0.2em]">नमस्ते, म</p>
