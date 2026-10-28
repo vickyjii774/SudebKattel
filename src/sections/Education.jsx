@@ -12,10 +12,10 @@ export default function Education() {
       className="scroll-mt-20 bg-gray-200"
     >
       <Container>
-        <div className="mx-auto max-w-7xl px-5 py-2 sm:px-8 sm:py-2 lg:px-12">
+        <div className="mx-auto max-w-7xl px-5 py-5 sm:px-8 sm:py-5 lg:px-12">
           <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl">
             Education
-            <span className="text-[#588157]">.</span>
+            <span className="text-[#588157]"></span>
           </h2>
 
           <div className="mt-12 space-y-5">
