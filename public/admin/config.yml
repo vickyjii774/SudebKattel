@@ -86,8 +86,18 @@ collections:
             name: gallery
             widget: list
             required: false
+            summary: '{{title}}'
             fields:
               - { label: Title, name: title, widget: string }
-              - { label: Image, name: image, widget: image, required: false }
+              - { label: Cover Image, name: image, widget: image, required: false }
               - { label: Description, name: description, widget: text, required: false }
+              - label: Photos
+                name: photos
+                widget: list
+                required: false
+                summary: '{{photo}}'
+                field:
+                  label: Photo
+                  name: photo
+                  widget: image
               - { label: Link, name: url, widget: string, required: false }
