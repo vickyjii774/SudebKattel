@@ -3,8 +3,8 @@ import { ArrowUpRight } from "lucide-react";
 import Container from "../components/Container";
 
 export default function Navbar() {
-  const { name, image } = siteData.profile;
-  const profileImage = image || "/images/uploads/1.jpeg";
+  const { name, image, navbarImage } = siteData.profile;
+  const brandImage = navbarImage || image || "/images/uploads/1.jpeg";
 
   const navigateTo = (id) => {
     if (id === "home") {
@@ -19,7 +19,7 @@ export default function Navbar() {
       <Container className="flex h-14 items-center justify-between gap-1 sm:h-[76px]">
         <button type="button" onClick={() => navigateTo("home")} aria-label={`${name} - Home`} className="group flex min-w-0 shrink items-center gap-1.5 sm:gap-3">
           <span className="flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-[#588157] shadow-sm transition duration-300 group-hover:scale-105 sm:h-11 sm:w-11 sm:rounded-2xl">
-            <img src={profileImage} alt={`${name} logo`} className="h-full w-full object-cover" />
+            <img src={brandImage} alt={`${name} logo`} className="h-full w-full object-cover" />
           </span>
           <span className="min-w-0 truncate text-xs font-bold tracking-tight text-gray-900 sm:text-lg">{name}</span>
         </button>
