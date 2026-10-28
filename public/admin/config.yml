@@ -1,31 +1,24 @@
-# Before publishing:
-# 1. Create a site in Decap Turbo and connect the GitHub repository.
-# 2. Add your deployed origin (e.g. https://your-site.vercel.app) to the site's
-#    Admin interface URLs in Turbo.
-# 3. Replace the placeholder below with the Site ID from Turbo's Overview page.
-# 4. Ensure the Turbo site's repository is this repository and its config path is
-#    public/admin/config.yml (repo-relative path).
+# Decap Turbo configuration.
+# Replace 769595f9-7703-4bf9-a43e-c35de4a19b58 with the Site ID from your Decap Turbo
+# dashboard (Site overview). Also allow your deployed /admin URL in Admin
+# interface URLs in Turbo before trying to sign in.
 backend:
   name: turbo-github
-  turbo_site_id: REPLACE_WITH_TURBO_SITE_ID
+  turbo_site_id: 769595f9-7703-4bf9-a43e-c35de4a19b58
   branch: main
   deploy_status: true
 
-# Images are committed to the GitHub repository and served by Vercel.
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
 publish_mode: simple
-site_url: /
-display_url: /
-
 collections:
   - name: portfolio
     label: Portfolio Content
     files:
       - name: site_data
         label: Website Content
-        file: content/siteData.json
+        file: src/data/siteData.json
         format: json
         fields:
           - label: Profile
@@ -33,47 +26,20 @@ collections:
             widget: object
             fields:
               - { label: Full Name, name: name, widget: string }
+              - { label: Short Name, name: shortName, widget: string, required: false }
               - { label: Role / Headline, name: role, widget: string }
-              - { label: Intro, name: intro, widget: text }
+              - { label: Nepali Introduction, name: introduction, widget: text }
+              - { label: About Description, name: about, widget: text }
               - { label: Location, name: location, widget: string, required: false }
               - { label: Email, name: email, widget: string }
-              - { label: Phone, name: phone, widget: string, required: false }
               - { label: Profile Image, name: image, widget: image, required: false }
-              - { label: Resume PDF, name: resume, widget: file, required: false }
               - label: Social Links
-                name: social
+                name: socials
                 widget: list
                 required: false
                 fields:
-                  - { label: Platform, name: platform, widget: string }
-                  - { label: URL, name: url, widget: string }
-          - { label: Availability Note, name: availability, widget: string, required: false }
-          - label: About
-            name: about
-            widget: object
-            fields:
-              - { label: Section Heading, name: heading, widget: string }
-              - { label: Description, name: description, widget: text }
-              - label: Focus Areas
-                name: focus
-                widget: list
-                required: false
-                field: { label: Focus Area, name: item, widget: string }
-          - label: Experience
-            name: experience
-            widget: list
-            required: false
-            fields:
-              - { label: Role, name: role, widget: string }
-              - { label: Organization, name: organization, widget: string }
-              - { label: Period, name: period, widget: string }
-              - { label: Location, name: location, widget: string, required: false }
-              - { label: Description, name: description, widget: text }
-              - label: Highlights
-                name: highlights
-                widget: list
-                required: false
-                field: { label: Highlight, name: item, widget: string }
+                  - { label: Platform, name: label, widget: string }
+                  - { label: URL, name: url, widget: string, required: false }
           - label: Education
             name: education
             widget: list
@@ -82,15 +48,23 @@ collections:
               - { label: Qualification, name: qualification, widget: string }
               - { label: Institution, name: institution, widget: string }
               - { label: Period, name: period, widget: string }
-              - { label: Details, name: details, widget: text, required: false }
+              - { label: Details, name: description, widget: text, required: false }
+          - label: Experience
+            name: experience
+            widget: list
+            required: false
+            fields:
+              - { label: Role, name: role, widget: string }
+              - { label: Organization, name: company, widget: string }
+              - { label: Period, name: period, widget: string }
+              - { label: Description, name: description, widget: text }
           - label: Achievements
             name: achievements
             widget: list
             required: false
             fields:
               - { label: Title, name: title, widget: string }
-              - { label: Organization, name: organization, widget: string, required: false }
-              - { label: Date, name: date, widget: string, required: false }
+              - { label: Category, name: category, widget: string, required: false }
               - { label: Description, name: description, widget: text }
           - label: Events
             name: events
@@ -98,17 +72,17 @@ collections:
             required: false
             fields:
               - { label: Event Name, name: title, widget: string }
-              - { label: Role, name: role, widget: string, required: false }
+              - { label: Category, name: category, widget: string, required: false }
               - { label: Date, name: date, widget: string, required: false }
-              - { label: Location, name: location, widget: string, required: false }
               - { label: Description, name: description, widget: text }
               - { label: Image, name: image, widget: image, required: false }
-              - { label: Link, name: link, widget: string, required: false }
+              - { label: Link, name: url, widget: string, required: false }
           - label: Gallery
             name: gallery
             widget: list
             required: false
             fields:
-              - { label: Image, name: image, widget: image }
-              - { label: Caption, name: caption, widget: string }
-              - { label: Category, name: category, widget: string, required: false }
+              - { label: Title, name: title, widget: string }
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Description, name: description, widget: text, required: false }
+              - { label: Link, name: url, widget: string, required: false }
