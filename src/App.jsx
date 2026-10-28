@@ -13,6 +13,7 @@ import Education from "./sections/Education";
 
 import Contact from "./sections/Contact";
 
+import Gallery from "./sections/Gallery";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Hero />
         <About />
         <Education />
+        <Gallery />
         <Contact />
       </main>
 

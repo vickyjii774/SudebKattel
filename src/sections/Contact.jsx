@@ -84,7 +84,7 @@ export default function Contact() {
           
            
 
-            <div className="mt-5 flex text-2xl justify-center">
+            <div className="mt-5 mb-4 flex text-2xl justify-center">
               <SocialLinks socials={socials} />
             </div>
           

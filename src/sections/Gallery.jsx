@@ -12,11 +12,9 @@ export default function Gallery() {
           <Container>
 
       <div className="mx-auto max-w-7xl px-5 py-2 sm:px-8 sm:py-2 lg:px-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#588157]">
-          Moments & memories
-        </p>
+        
         <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl">
-          Gallery<span className="text-[#588157]">.</span>
+          Gallery<span className="text-[#588157]"></span>
         </h2>
         <p className="mt-4 max-w-2xl leading-7 text-gray-600">
           A collection of moments, projects, and experiences.
