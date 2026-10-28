@@ -32,7 +32,9 @@ collections:
               - { label: About Description, name: about, widget: text }
               - { label: Location, name: location, widget: string, required: false }
               - { label: Email, name: email, widget: string }
-              - { label: Profile Image, name: image, widget: image, required: false }
+              - { label: Profile Image (Hero), name: image, widget: image, required: false }
+              - { label: Navbar and Footer Image, name: navbarImage, widget: image, required: false }
+              - { label: About Section Image, name: aboutImage, widget: image, required: false }
               - label: Social Links
                 name: socials
                 widget: list
@@ -49,6 +51,7 @@ collections:
               - { label: Institution, name: institution, widget: string }
               - { label: Period, name: period, widget: string }
               - { label: Details, name: description, widget: text, required: false }
+              - { label: Education Image, name: image, widget: image, required: false }
           - label: Experience
             name: experience
             widget: list
@@ -58,6 +61,7 @@ collections:
               - { label: Organization, name: company, widget: string }
               - { label: Period, name: period, widget: string }
               - { label: Description, name: description, widget: text }
+              - { label: Experience Image, name: image, widget: image, required: false }
           - label: Achievements
             name: achievements
             widget: list
@@ -66,6 +70,7 @@ collections:
               - { label: Title, name: title, widget: string }
               - { label: Category, name: category, widget: string, required: false }
               - { label: Description, name: description, widget: text }
+              - { label: Achievement Image, name: image, widget: image, required: false }
           - label: Events
             name: events
             widget: list
@@ -81,8 +86,18 @@ collections:
             name: gallery
             widget: list
             required: false
+            summary: '{{title}}'
             fields:
               - { label: Title, name: title, widget: string }
-              - { label: Image, name: image, widget: image, required: false }
+              - { label: Cover Image, name: image, widget: image, required: false }
               - { label: Description, name: description, widget: text, required: false }
+              - label: Photos
+                name: photos
+                widget: list
+                required: false
+                summary: '{{photo}}'
+                field:
+                  label: Photo
+                  name: photo
+                  widget: image
               - { label: Link, name: url, widget: string, required: false }

@@ -26,6 +26,7 @@ export default function Experience() {
               key={`${item.company}-${index}`}
               className="group rounded-3xl border border-gray-200/80 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-[#588157]/40 hover:shadow-xl hover:shadow-gray-900/5 sm:p-8"
             >
+              {item.image && <img src={item.image} alt={item.role} className="mb-5 aspect-[16/7] w-full rounded-2xl object-cover" />}
               <div className="flex items-start justify-between gap-4">
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#E8EFE7] text-[#3F6240]">
                   <BriefcaseBusiness size={22} />

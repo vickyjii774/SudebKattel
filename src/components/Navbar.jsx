@@ -4,8 +4,8 @@ import { ArrowUpRight } from "lucide-react";
 import Container from "../components/Container";
 
 export default function Navbar() {
-  const { name, image } = siteData.profile;
-  const profileImage = image || "/images/uploads/1.jpeg";
+  const { name, image, navbarImage } = siteData.profile;
+  const brandImage = navbarImage || image || "/images/uploads/1.jpeg";
 
   const navigateTo = (id) => {
     if (id === "home") {
