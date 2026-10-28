@@ -29,20 +29,23 @@
     "role": "पण्डित",
     "introduction": "एक समर्पित पण्डित, वैदिक ज्ञान, सनातन संस्कृति र आध्यात्मिक मूल्यहरूको संरक्षण तथा प्रवर्द्धनमा रुचि राख्ने व्यक्ति।",
     "image": "/images/uploads/dsc06838.jpg",
-    "email": "sudebkattel9@gmail.com"
+    "email": "sudebkattel9@gmail.com",
+    "aboutImage": ""
   },
   "education": [
     {
       "qualification": "Master",
       "institution": "Institution Name",
       "period": "2023 — 2026",
-      "description": "Add your course, academic interests, and relevant achievements."
+      "description": "Add your course, academic interests, and relevant achievements.",
+      "image": ""
     },
     {
       "qualification": "Bachelor",
       "institution": "Institution Name",
       "period": "2023 — 2026",
-      "description": "Add your course, academic interests, and relevant achievements."
+      "description": "Add your course, academic interests, and relevant achievements.",
+      "image": ""
     }
   ],
   "experience": [
@@ -50,14 +53,16 @@
       "role": "Your Professional Role",
       "company": "Organization Name",
       "period": "2025 — Present",
-      "description": "Add your responsibilities, projects, and the impact of your work here."
+      "description": "Add your responsibilities, projects, and the impact of your work here.",
+      "image": ""
     }
   ],
   "achievements": [
     {
       "title": "Achievement or Award",
       "category": "Recognition",
-      "description": "Describe an accomplishment, award, certification, or milestone."
+      "description": "Describe an accomplishment, award, certification, or milestone.",
+      "image": ""
     }
   ],
   "events": [
