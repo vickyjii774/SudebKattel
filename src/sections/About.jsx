@@ -1,12 +1,16 @@
 
 import siteData from "../data/siteData";
+import Container from "../components/Container";
+
 
 export default function About() {
   const { name,role, about } = siteData.profile;
 
   return (
     <section id="about" className="scroll-mt-20 bg-white">
-      <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
+          <Container>
+
+      <div className="mx-auto max-w-7xl px-5 py-2 sm:px-8 sm:py-2 lg:px-12">
 
         {/* Heading at the top */}
         <h2 className="text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl">
@@ -43,6 +47,8 @@ export default function About() {
 
         </div>
       </div>
+          </Container>
+
     </section>
   );
 }

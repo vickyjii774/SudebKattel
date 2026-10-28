@@ -13,6 +13,7 @@ import Education from "./sections/Education";
 
 import Contact from "./sections/Contact";
 
+
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
@@ -26,6 +27,7 @@ export default function App() {
       </main>
 
       <Footer />
+      
     </div>
   );
 }

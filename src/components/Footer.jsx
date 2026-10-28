@@ -1,11 +1,15 @@
 
 import siteData from "../data/siteData";
+import Container from "../components/Container";
+
 
 export default function Footer() {
   const { name, image, location } = siteData.profile;
 
   return (
     <footer className="border-t border-gray-200 bg-[#F8FAF7]">
+          <Container>
+
       <div className="mx-auto flex max-w-7xl flex-row items-center justify-between gap-3 px-5 py-7 sm:px-8 lg:px-12">
 
         {/* Logo and Name */}
@@ -32,6 +36,8 @@ export default function Footer() {
         </p>
 
       </div>
+          </Container>
+
     </footer>
   );
 }

@@ -1,6 +1,7 @@
 
 import siteData from "../data/siteData";
 import { ArrowUpRight } from "lucide-react";
+import Container from "../components/Container";
 
 export default function Navbar() {
   const { name } = siteData.profile;
@@ -19,8 +20,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200/70 bg-white/90 shadow-sm shadow-gray-900/[0.02] backdrop-blur-xl">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-1 px-2.5 sm:h-[76px] sm:px-6 lg:px-12">
-
+      <Container className="flex h-14 items-center justify-between gap-1 sm:h-[76px]">
         {/* Logo and Name */}
         <button
           type="button"
@@ -44,12 +44,12 @@ export default function Navbar() {
         {/* Navigation Links */}
         <nav
           aria-label="Main navigation"
-          className="flex shrink-0 items-center gap-0 sm:gap-2"
+          className="flex shrink-0 items-center gap-1.5 sm:gap-2"
         >
           <button
             type="button"
             onClick={() => navigateTo("home")}
-            className="rounded-full px-1.5 py-1.5 text-[11px] font-medium text-gray-700 transition duration-200 hover:bg-[#E8EFE7] hover:text-[#3F6240] sm:px-5 sm:py-2 sm:text-sm"
+            className="rounded-full px-2.5 py-1.5 text-[11px] font-medium text-gray-700 transition duration-200 hover:bg-[#E8EFE7] hover:text-[#3F6240] sm:px-5 sm:py-2 sm:text-sm"
           >
             Home
           </button>
@@ -57,7 +57,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => navigateTo("about")}
-            className="rounded-full px-1.5 py-1.5 text-[11px] font-medium text-gray-700 transition duration-200 hover:bg-[#E8EFE7] hover:text-[#3F6240] sm:px-5 sm:py-2 sm:text-sm"
+            className="rounded-full px-2.5 py-1.5 text-[11px] font-medium text-gray-700 transition duration-200 hover:bg-[#E8EFE7] hover:text-[#3F6240] sm:px-5 sm:py-2 sm:text-sm"
           >
             About
           </button>
@@ -65,7 +65,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => navigateTo("contact")}
-            className="ml-0.5 inline-flex items-center gap-0.5 rounded-full bg-[#588157] px-2 py-1.5 text-[11px] font-semibold text-white shadow-sm transition duration-300 hover:bg-[#3F6240] sm:ml-1 sm:gap-2 sm:px-5 sm:py-3 sm:text-sm"
+            className="ml-0.5 inline-flex items-center gap-1 rounded-full bg-[#588157] px-2.5 py-1.5 text-[11px] font-semibold text-white shadow-sm transition duration-300 hover:bg-[#3F6240] sm:ml-1 sm:gap-2 sm:px-5 sm:py-3 sm:text-sm"
           >
             Contact
             <ArrowUpRight
@@ -74,7 +74,7 @@ export default function Navbar() {
             />
           </button>
         </nav>
-      </div>
+      </Container>
     </header>
   );
 }

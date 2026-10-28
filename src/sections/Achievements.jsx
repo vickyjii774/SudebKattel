@@ -1,12 +1,16 @@
 
 import siteData from "../data/siteData";
 import { Award, Sparkles } from "lucide-react";
+import Container from "../components/Container";
+
 
 export default function Achievements() {
   const items = siteData.achievements || [];
 
   return (
     <section id="achievements" className="scroll-mt-20 bg-[#F8FAF7]">
+          <Container>
+
       <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24 lg:px-12">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#588157]">
           Milestones
@@ -44,6 +48,8 @@ export default function Achievements() {
           ))}
         </div>
       </div>
+          </Container>
+
     </section>
   );
 }

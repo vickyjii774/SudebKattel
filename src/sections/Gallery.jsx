@@ -1,13 +1,17 @@
 
 import siteData from "../data/siteData";
 import { ArrowUpRight, Image as ImageIcon } from "lucide-react";
+import Container from "../components/Container";
+
 
 export default function Gallery() {
   const items = siteData.gallery || [];
 
   return (
     <section id="gallery" className="scroll-mt-20 bg-[#F8FAF7]">
-      <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24 lg:px-12">
+          <Container>
+
+      <div className="mx-auto max-w-7xl px-5 py-2 sm:px-8 sm:py-2 lg:px-12">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#588157]">
           Moments & memories
         </p>
@@ -63,6 +67,8 @@ export default function Gallery() {
           ))}
         </div>
       </div>
+          </Container>
+
     </section>
   );
 }

@@ -3,6 +3,8 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import siteData from "../data/siteData";
 import SocialLinks from "../components/SocialLinks";
+import Container from "../components/Container";
+
 
 export default function Contact() {
   const profile = siteData?._profile ?? siteData?.profile ?? {};
@@ -53,16 +55,18 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-20 bg-white"
+      className="scroll-mt-10 bg-white"
     >
-      <div className="mx-auto max-w-3xl px-5 py-20 sm:px-8 sm:py-28">
+          <Container>
+
+      <div className="mx-auto max-w-3xl px-5 py-1 sm:px-8 sm:py-1">
 
         {/* Heading */}
         <div className="text-center">
           <h2 className="mt-6 text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl lg:text-6xl">
-            Let's start a
-            <span className="mt-2 block text-[#588157]">
-              conversation.
+            Let's { " "}
+            <span className=" text-[#588157]">
+              Connect
             </span>
           </h2>
 
@@ -191,15 +195,15 @@ export default function Contact() {
               />
             </button>
 
-            <p className="text-center text-xs leading-5 text-gray-500">
-              Your email app will open to send your message.
+            <p className="text-center text-xs leading-5 text-green-500">
+              thankyou.
             </p>
           </form>
         </div>
 
         {/* Social Media */}
         {socials.length > 0 && (
-          <div className="mt-8 border-t border-gray-100 pt-7">
+          <div className="mt-8 border-t border-gray-100 pt-1">
             <p className="text-center text-sm font-medium text-gray-500">
               Connect with me
             </p>
@@ -210,6 +214,8 @@ export default function Contact() {
           </div>
         )}
       </div>
+          </Container>
+
     </section>
   );
 }

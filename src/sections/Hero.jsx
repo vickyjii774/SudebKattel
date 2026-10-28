@@ -1,6 +1,8 @@
 
 import siteData from "../data/siteData";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
+import Container from "../components/Container";
+
 
 export default function Hero() {
   const { name, role, introduction, image } = siteData.profile;
@@ -10,6 +12,8 @@ export default function Hero() {
       id="home"
       className="relative overflow-hidden bg-[#F2F6F1]"
     >
+            <Container>
+
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[#588157]/10 blur-3xl" />
 
       <div className="mx-auto grid max-w-7xl grid-cols-2 items-center gap-3 px-3 py-12 sm:gap-12 sm:px-8 sm:py-24 lg:gap-20 lg:px-12 lg:py-28">
@@ -73,6 +77,8 @@ export default function Hero() {
         </div>
 
       </div>
+            </Container>
+
     </section>
   );
 }
