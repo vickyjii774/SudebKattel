@@ -1,5 +1,5 @@
 # Decap Turbo configuration.
-# Replace REPLACE_WITH_TURBO_SITE_ID with the Site ID from your Decap Turbo
+# Replace 769595f9-7703-4bf9-a43e-c35de4a19b58 with the Site ID from your Decap Turbo
 # dashboard (Site overview). Also allow your deployed /admin URL in Admin
 # interface URLs in Turbo before trying to sign in.
 backend:
