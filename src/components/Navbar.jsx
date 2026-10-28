@@ -37,7 +37,7 @@ export default function Navbar() {
           >
             <span className="flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-[#588157] shadow-sm transition duration-300 group-hover:scale-105 sm:h-10 sm:w-10 sm:rounded-2xl">
               <img
-                src={profileImage}
+                src={brandImage}
                 alt={`${name} logo`}
                 className="h-full w-full object-cover"
               />

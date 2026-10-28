@@ -31,17 +31,16 @@ export default function Gallery() {
     <section id="gallery" className="scroll-mt-20 bg-[#F8FAF7]">
       <Container>
         <div className="mx-auto max-w-7xl px-5 py-2 sm:px-8 sm:py-2 lg:px-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#588157]">
-            Moments & memories
-          </p>
+         
           <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl">
-            Gallery<span className="text-[#588157]">.</span>
+            Gallery<span className="text-[#588157]"></span>
           </h2>
           <p className="mt-4 max-w-2xl leading-7 text-gray-600">
             A collection of moments, projects, and experiences.
           </p>
 
-          <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          
+          <div className="mt-12 grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-4 lg:gap-5">
             {items.map((item, index) => {
               const photos = getPhotos(item);
               const cover = item.image || photos[0];
@@ -49,7 +48,7 @@ export default function Gallery() {
               return (
                 <article
                   key={`${item.title}-${index}`}
-                  className="group overflow-hidden rounded-3xl border border-gray-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-[#588157]/30 hover:shadow-xl hover:shadow-gray-900/5"
+                  className="group overflow-hidden text-sm rounded-3xl border border-gray-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-[#588157]/30 hover:shadow-xl hover:shadow-gray-900/5"
                 >
                   <button
                     type="button"
