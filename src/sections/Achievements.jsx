@@ -8,7 +8,7 @@ export default function Achievements() {
   const items = siteData.achievements || [];
 
   return (
-    <section id="achievements" className="scroll-mt-20 bg-[#F8FAF7]">
+    <section id="achievements" className="scroll-mt-20 bg-white">
           <Container>
 
 <div className="mx-auto max-w-7xl px-5 py-5 sm:px-8 sm:py-5 lg:px-12">
