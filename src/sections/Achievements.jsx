@@ -11,12 +11,12 @@ export default function Achievements() {
     <section id="achievements" className="scroll-mt-20 bg-[#F8FAF7]">
           <Container>
 
-      <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24 lg:px-12">
+<div className="mx-auto max-w-7xl px-5 py-5 sm:px-8 sm:py-5 lg:px-12">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#588157]">
           Milestones
         </p>
         <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl">
-          Achievements<span className="text-[#588157]">.</span>
+          Achievements<span className="text-[#588157]"></span>
         </h2>
         <p className="mt-4 max-w-2xl leading-7 text-gray-600">
           Recognition, milestones, and accomplishments worth celebrating.

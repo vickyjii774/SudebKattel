@@ -11,6 +11,8 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Education from "./sections/Education";
 
+import Achievements from "./sections/Achievements";
+
 import Contact from "./sections/Contact";
 
 import Gallery from "./sections/Gallery";
@@ -24,6 +26,7 @@ export default function App() {
         <Hero />
         <About />
         <Education />
+        <Achievements />
         <Gallery />
         <Contact />
       </main>
