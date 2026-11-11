@@ -27,13 +27,8 @@ export default function Achievements() {
               className="relative overflow-hidden rounded-3xl border border-gray-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#588157]/40 hover:shadow-xl hover:shadow-gray-900/5"
             >
               {item.image && <img src={item.image} alt={item.title} className="mb-5 aspect-[16/7] w-full rounded-2xl object-cover" />}
-              <Sparkles
-                size={70}
-                className="pointer-events-none absolute -right-3 -top-3 text-[#588157]/[0.07]"
-              />
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#E8EFE7] text-[#3F6240]">
-                <Award size={24} />
-              </span>
+              
+              
               <p className="mt-6 text-xs font-bold uppercase tracking-widest text-[#588157]">
                 {item.category}
               </p>
