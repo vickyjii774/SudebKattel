@@ -79,13 +79,13 @@
   "gallery": [
     {
       "title": "Creative Moments",
-      "image": "/images/uploads/bik.jpg",
-      "description": "Add a memorable project or event photo.",
+      "image": "/images/uploads/img_20261021_095849519_hdr_portrait.jpg",
+      "description": "Dashain 2083",
       "url": "",
       "photos": [
-        "/images/uploads/dsc06838.jpg",
-        "/images/uploads/whatsapp-image-2025-12-22-at-13.56.48.jpeg",
-        "/images/uploads/bik.jpg"
+        "/images/uploads/img_20261021_095849519_hdr_portrait.jpg",
+        "/images/uploads/img_20261021_105804826_hdr.jpg",
+        "/images/uploads/1000019475.jpg"
       ]
     }
   ]
